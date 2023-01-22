@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Online Test</title>
+</head>
+<body>
+<form name="myform">
+	Q1 What does SQL stand for?.<br>
+	<input type="radio" name="Q1" value="A">Strong Question Language<br>
+	<input type="radio" name="Q1" value="B">Structued Question Language<br>
+	<input type="radio" name="Q1" value="C">Structued Query Language<br>
+	<input type="radio" name="Q1" value="D">None of These<br><br>
+	Q2 Which SQL statement is used to update data in a database?.<br>
+	<input type="radio" name="Q2" value="A">UPDATE<br>
+	<input type="radio" name="Q2" value="B">SAVE AS<br>
+	<input type="radio" name="Q2" value="C">SAVE<br>
+	<input type="radio" name="Q2" value="D">MODIFY<br><br>
+	Q3 Which SQL statement is used to extract data from a database?.<br>
+	<input type="radio" name="Q3" value="A">SELECT<br>
+	<input type="radio" name="Q3" value="B">GET<br>
+	<input type="radio" name="Q3" value="C">OPEN<br>
+	<input type="radio" name="Q3" value="D">EXTRACT<br><br>
+	Q4 Which SQL statement is used to delete data from a database?.<br>
+	<input type="radio" name="Q4" value="A">DELETE<br>
+	<input type="radio" name="Q4" value="B">REMOVE<br>
+	<input type="radio" name="Q4" value="C">COLLAPSE<br>
+	<input type="radio" name="Q4" value="D">None of These<br><br>
+	Q5 Which SQL statement is used to insert new data in a database?.<br>
+	<input type="radio" name="Q5" value="A">INSERT NEW<br>
+	<input type="radio" name="Q5" value="B">INSERT INTO<br>
+	<input type="radio" name="Q5" value="C">ADD NEW<br>
+	<input type="radio" name="Q5" value="D">ADD RECORD<br><br>
+	Q6 With SQL, how do you select a column named "FirstName" from a table named "Persons"?.<br>
+	<input type="radio" name="Q6" value="A">SELECT FirstName FROM Persons<br>
+	<input type="radio" name="Q6" value="B">SELECT Persons.FirstName Language<br>
+	<input type="radio" name="Q6" value="C">EXTRACT FirstName FROM Persons<br>
+	<input type="radio" name="Q6" value="D">None of These<br><br>
+	Q7 With SQL, how do you select all the columns from a table named "Persons"?.<br>
+	<input type="radio" name="Q7" value="A">SELECT * FROM Persons<br>
+	<input type="radio" name="Q7" value="B">SELECT *.Persons<br>
+	<input type="radio" name="Q7" value="C">SELECT [all] FROM Persons<br>
+	<input type="radio" name="Q7" value="D">SELECT Persons <br><br>
+	Q8 The OR operator displays a record if ANY conditions listed are true. The AND operator displays a record if ALL of the conditions listed are true.<br>
+	<input type="radio" name="Q8" value="A">False<br>
+	<input type="radio" name="Q8" value="B">True<br>
+	<input type="radio" name="Q8" value="C">None of These<br><br>
+	Q9 Which operator is used to select values within a range?.<br>
+	<input type="radio" name="Q9" value="A">WITHIN<br>
+	<input type="radio" name="Q9" value="B">RANGE<br>
+	<input type="radio" name="Q9" value="C">BETWEEN<br>
+	<input type="radio" name="Q9" value="D">None of These<br><br>
+	Q10 The NOT NULL constraint enforces a column to not accept NULL values.<br>
+	<input type="radio" name="Q10" value="A">False<br>
+	<input type="radio" name="Q10" value="B">True<br>
+	<input type="radio" name="Q10" value="C">None of These<br><br>
+	<input type="button" value="Submit" onclick="check()">
+</form>
+<script>
+	function check(){
+		var Q1=document.myform.Q1.value;
+		var Q2=document.myform.Q2.value;
+		var Q3=document.myform.Q3.value;
+		var Q4=document.myform.Q4.value;
+		var Q5=document.myform.Q5.value;
+		var Q6=document.myform.Q6.value;
+		var Q7=document.myform.Q7.value;
+		var Q8=document.myform.Q8.value;
+		var Q9=document.myform.Q9.value;
+		var Q10=document.myform.Q10.value;
+		var count=0;
+		if(Q1=="C"){
+			count++;
+		}
+		if (Q2=="A") {
+			count++;
+		}
+		if (Q3=="B") {
+			count++;
+		}
+		if (Q4=="C") {
+			count++;
+		}
+		if (Q5=="B") {
+			count++;
+		}
+		if (Q6=="C") {
+			count++;
+		}
+		if (Q7=="B") {
+			count++;
+		}
+		if (Q8=="B") {
+			count++;
+		}
+		if (Q9=="A") {
+			count++;
+		}
+		if (Q10=="C") {
+			count++;
+		}
+		alert("You Total Marks is "+count+" ");
+	}
+</script>
+</body>
+</html>
